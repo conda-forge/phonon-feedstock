@@ -17,6 +17,8 @@ docker_image:
 pin_run_as_build:
   qt:
     max_pin: x.x
+pulseaudio:
+- '14.0'
 qt:
 - '5.12'
 target_platform:
