@@ -1,8 +1,10 @@
-migrator_ts: 1649204305
+migrator_ts: 1653771978
 __migrator:
   kind: version
   migration_number: 1
   bump_number: 1
 
-pulseaudio:
-  - 14.0
+qt:
+  - 5.15
+qt_main:
+  - 5.15
