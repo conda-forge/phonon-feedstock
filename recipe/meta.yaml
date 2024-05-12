@@ -1,5 +1,5 @@
 {% set name = "phonon" %}
-{% set version = "4.11.1" %}
+{% set version = "4.12.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://download.kde.org/stable/phonon/{{ version }}/phonon-{{ version }}.tar.xz
-  sha256: b4431ea2600df8137a717741ad9ebc7f7ec1649fa3e138541d8f42597144de2d
+  sha256: 3287ffe0fbcc2d4aa1363f9e15747302d0b080090fe76e5f211d809ecb43f39a
 
 build:
-  number: 5
+  number: 0
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('phonon', max_pin='x') }}
