@@ -11,7 +11,7 @@ source:
   sha256: b4431ea2600df8137a717741ad9ebc7f7ec1649fa3e138541d8f42597144de2d
 
 build:
-  number: 5
+  number: 6
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('phonon', max_pin='x') }}
@@ -23,17 +23,13 @@ requirements:
     - cmake
     - make
     - extra-cmake-modules
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
   host:
     - xorg-libxfixes  # [linux]
     - xorg-libxext
     - qt-main
     - ecm
     - pulseaudio
+    - libgl-devel                    # [linux]
 
 test:
   commands:
